@@ -36,4 +36,4 @@ ADD . /app
 # run the command to start uWSGI
 #CMD ["uwsgi", "app.ini"]
 
-RUN python main.py
+RUN python app/main.py
