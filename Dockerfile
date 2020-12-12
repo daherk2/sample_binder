@@ -7,10 +7,10 @@ RUN apt-get install build-essential
 RUN gcc --version
 
 # Set the working directory to /app
-#WORKDIR /app
+WORKDIR /app
 
 # Copy the current directory contents into the container at /app 
-#ADD . /app
+ADD . /app
 
 # Install the dependencies
 #flask
@@ -36,4 +36,4 @@ RUN gcc --version
 # run the command to start uWSGI
 #CMD ["uwsgi", "app.ini"]
 
-RUN echo 'Hello world!'
+RUN python app.py
