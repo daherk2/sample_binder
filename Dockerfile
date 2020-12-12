@@ -22,15 +22,15 @@ ADD . /app
 #RUN pip install -r requirements.txt
 
 RUN pip --no-cache-dir install flask
-RUN pip cache purge
+#RUN pip cache purge
 RUN pip --no-cache-dir install uwsgi
-RUN pip cache purge
+#RUN pip cache purge
 RUN pip --no-cache-dir install sklearn
-RUN pip cache purge
+#RUN pip cache purge
 RUN pip --no-cache-dir install tensorflow
-RUN pip cache purge
+#RUN pip cache purge
 RUN pip --no-cache-dir install keras
-RUN pip cache purge
+#RUN pip cache purge
 RUN pip --no-cache-dir install flask-restplus
 
 # run the command to start uWSGI
